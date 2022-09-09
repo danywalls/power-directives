@@ -1,4 +1,6 @@
+import { TEAMS, Team } from './nba';
 import { Component } from '@angular/core';
+import { PageChangeEvent } from '@progress/kendo-angular-pager';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +9,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'power-directives';
+
+
+
 }
