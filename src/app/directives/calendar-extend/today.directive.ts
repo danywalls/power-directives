@@ -7,8 +7,8 @@ import { CalendarComponent } from '@progress/kendo-angular-dateinputs';
 export class TodayDirective {
 
   constructor(private calendar: CalendarComponent) {
-    this.calendar.value = new Date();
-    this.calendar.navigation = false;
+    // this.calendar.value = new Date();
+    // this.calendar.navigation = false;
   }
 
 }

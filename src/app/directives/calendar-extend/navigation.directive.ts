@@ -7,6 +7,6 @@ import { CalendarComponent } from '@progress/kendo-angular-dateinputs';
 export class NavigationDirective {
 
   constructor(private calendar: CalendarComponent) {
-    this.calendar.navigation = true;
+    // this.calendar.navigation = true;
   }
 }

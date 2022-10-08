@@ -1,5 +1,12 @@
 import { Component, Input, OnInit } from '@angular/core';
 
+export type NbaCalendarType = "infinite" | "classic"
+export interface NbaCalendarConfig {
+  showNavigation: boolean;
+  currentDate:  Date;
+  type: NbaCalendarType;
+}
+
 @Component({
   selector: 'app-nba-calendar',
   templateUrl: './nba-calendar.component.html',
@@ -7,8 +14,12 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class NbaCalendarComponent implements OnInit {
 
-  @Input() showNavigation = true;
-  @Input() currentDate: Date = new Date();
+  @Input() calendarConfig: NbaCalendarConfig = {
+    showNavigation: false,
+    currentDate: new Date(),
+    type: 'infinite'
+  };
+
   constructor() { }
 
   ngOnInit(): void {
