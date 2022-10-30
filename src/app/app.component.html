@@ -1,20 +1,28 @@
 <div class="container">
-  <h2>NBA TICKETS</h2>
-  <div class="row">
+  <h2>Example App</h2>
 
-    <div class="col">
-      <h2>REGULAR SEASON</h2>
+<div class="example">
+
+  <div class="col">
+    <h2>Calendar With Container</h2>
+    <div class="calendars">
       <app-nba-calendar></app-nba-calendar>
-    </div>
-    <div class="col">
-      <h2>NBA FINALS</h2>
       <app-nba-calendar [calendarConfig]="finalsCalendarConfig"></app-nba-calendar>
-      <kendo-calendar></kendo-calendar>
     </div>
-    <div class="col">
-      <h2>NBA TICKETS</h2>
+
+  </div>
+
+  <div class="col">
+
+    <h2>Calendar without Container</h2>
+    <div class="calendars">
+      <kendo-calendar></kendo-calendar>
       <kendo-calendar with-navigation></kendo-calendar>
     </div>
+
   </div>
+
+</div>
+
 
 </div>
